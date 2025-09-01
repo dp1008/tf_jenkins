@@ -11,7 +11,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/dp1008/tf_jenkins.git'
+                    git branch: 'main',   // ✅ use the correct branch
+                    url: 'https://github.com/dp1008/tf_jenkins.git',
+                    credentialsId: 'github-credentials'  // if repo is private
             }
         }
 
