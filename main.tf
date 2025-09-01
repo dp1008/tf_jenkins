@@ -1,3 +1,11 @@
+terraform {
+  backend "azurerm" {
+    resource_group_name   = "rg-terraform"
+    storage_account_name  = "tfstateaccount1008"
+    container_name        = "tfstate"
+    key                   = "jenkins.tfstate"
+  }
+}
 provider "azurerm" {
   features {}
 }
