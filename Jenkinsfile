@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/terraform-azure-demo.git'
+                git 'git@github.com:dp1008/tf_jenkins.git'
             }
         }
 
