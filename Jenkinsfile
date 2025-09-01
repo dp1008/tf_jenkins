@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'git@github.com:dp1008/tf_jenkins.git'
+                git 'https://github.com/dp1008/tf_jenkins.git'
             }
         }
 
